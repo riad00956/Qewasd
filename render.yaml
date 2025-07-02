@@ -1,0 +1,12 @@
+services:
+  - type: worker
+    name: rah-power-bot
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: BOT_TOKEN
+        value: 7819903336:AAFRrlt_YlEEcLON9v9d96R4foIHu-Xd1B0
+      - key: ADMIN_ID
+        value: 7832264582
